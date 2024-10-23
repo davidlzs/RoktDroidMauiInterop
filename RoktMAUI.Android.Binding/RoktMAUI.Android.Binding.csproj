@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Maui.NativeLibraryInterop.BuildTasks" Version="0.0.1-pre1" PrivateAssets="all" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<NLIGradleProjectReference
+				Include="../NativeLibrary">
+			<ModuleName>RoktSDKImplemenation</ModuleName>
+			<!-- Metadata applicable to @(AndroidLibrary) will be used if set, otherwise the following defaults will be used: -->
+			<!--<Bind>true</Bind>
+			<Pack>true</Pack>
+			<Visible>true</Visible>-->
+		</NLIGradleProjectReference>
+	</ItemGroup>
+</Project>

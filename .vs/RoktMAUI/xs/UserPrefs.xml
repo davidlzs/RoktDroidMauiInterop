@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{712BF6AB-3D51-4B22-9CE7-9CD65D56A81C}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/samsung_980_pro_2tb/RoktGithubIssue/RoktMAUI/Platforms/Android/MainActivity.cs" relfile="RoktMAUI/Platforms/Android/MainActivity.cs" line="21" column="1" />
+      <Breakpoint file="/Volumes/samsung_980_pro_2tb/RoktGithubIssue/RoktMAUI/Platforms/Android/MainActivity.cs" relfile="RoktMAUI/Platforms/Android/MainActivity.cs" line="16" column="1" />
+      <Breakpoint file="/Volumes/samsung_980_pro_2tb/RoktGithubIssue/RoktMAUI/Platforms/Android/MainActivity.cs" relfile="RoktMAUI/Platforms/Android/MainActivity.cs" line="17" column="1" />
+      <Breakpoint file="/Volumes/samsung_980_pro_2tb/RoktGithubIssue/RoktMAUI/Platforms/Android/MainActivity.cs" relfile="RoktMAUI/Platforms/Android/MainActivity.cs" line="18" column="1" />
+      <Breakpoint file="/Volumes/samsung_980_pro_2tb/RoktGithubIssue/RoktMAUI/Platforms/Android/MainActivity.cs" relfile="RoktMAUI/Platforms/Android/MainActivity.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.143" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.99181FFAZ003QK" />
+  <MonoDevelop.Ide.ItemProperties.RoktMAUI PreferredExecutionTarget="Android.99181FFAZ003QK" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RoktMAUI/Platforms/Android/MainActivity.cs">
+    <Files>
+      <File FileName="RoktMAUI/Platforms/Android/MainActivity.cs" Line="4" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RoktMAUI" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
