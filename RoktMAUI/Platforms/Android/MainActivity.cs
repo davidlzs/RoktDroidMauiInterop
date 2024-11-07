@@ -7,19 +7,11 @@ namespace RoktMAUI;
 [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
 public class MainActivity : MauiAppCompatActivity
 {
+    public static Activity Instance;
     protected override void OnCreate(Bundle? savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
-        try
-        {
-            RoktSDKWrapper.RoktSDkWrapper.InitializeSDK("222", "4.6.0", this);
-            RoktSDKWrapper.RoktSDkWrapper.ToggleLogging(true);
-            RoktSDKWrapper.RoktSDkWrapper.ExecuteLayoutTest("ExampleView");
-        }
-        catch (Exception ex)
-        {
-            Console.Write(ex);
-        }
+        Instance = this;
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-
+using RoktMAUI.Platforms.Android.Services;
+using RoktMAUI.Services;
 namespace RoktMAUI;
 
 public static class MauiProgram
@@ -19,7 +20,8 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+        builder.Services.AddSingleton<IRoktService, RoktService>();
+        return builder.Build();
 	}
 }
 

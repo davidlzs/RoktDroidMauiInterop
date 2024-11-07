@@ -23,12 +23,12 @@
 		<ApplicationTitle>RoktMAUI</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.roktmaui</ApplicationId>
+		<ApplicationId>com.company.roktmaui</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
-
+		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
@@ -54,6 +54,19 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+
+		<!--<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.8.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.8.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.8.21" />-->
+
+		<PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="2.0.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="2.0.21" />
+
+		
+		<!--<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.8.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.8.21" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.22" />-->
 	</ItemGroup>
 
 	<ItemGroup>
@@ -75,5 +88,14 @@
 	    <Bind>false</Bind>
 	    <Pack>fasle</Pack>
 	  </AndroidLibrary>-->
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Platforms\Android\Services\" />
+	  <None Remove="Services\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\Android\Services\" />
+	  <Folder Include="Services\" />
 	</ItemGroup>
 </Project>
