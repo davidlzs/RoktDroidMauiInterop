@@ -42,13 +42,38 @@ dependencies {
     "copyDependencies"(libs.roktsdk)
 }
 
+/*
 project.afterEvaluate {
     tasks.register<Copy>("copyDeps") {
-        from(configurations["copyDependencies"])
-        into("${buildDir}/outputs/deps")
+        configurations["copyDependencies"].resolvedConfiguration.resolvedArtifacts.forEach { artifact ->
+            val file = artifact.file
+            from(file)
+            into("${buildDir}/outputs/deps")
+            rename { fileName ->
+                "${artifact.moduleVersion.id.group}.$fileName"
+            }
+        }
 
         // Set duplicate handling strategy
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
     tasks.named("preBuild") { finalizedBy("copyDeps") }
+}*/
+project.afterEvaluate {
+    tasks.register("copyDeps") {
+        doLast {
+            configurations["copyDependencies"].resolvedConfiguration.resolvedArtifacts.forEach { artifact ->
+                project.copy {
+                    from(artifact.file)
+                    into("${buildDir}/outputs/deps")
+                    rename { fileName ->
+                        "${artifact.moduleVersion.id.group}.$fileName"
+                    }
+                }
+            }
+        }
+    }
+    tasks.named("preBuild") {
+        finalizedBy("copyDeps")
+    }
 }

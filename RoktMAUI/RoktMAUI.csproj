@@ -74,15 +74,83 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\roktsdk-4.6.0.aar">
+	  <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.roktsdk-4.6.0.aar">
 	    <Bind>false</Bind>
 	    <Pack>fasle</Pack>
 	  </AndroidLibrary>
-	  
-	  <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\kotlin-stdlib-jdk8-1.8.21.jar">
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.common.impl-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.google.dagger.dagger-2.44.2.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.common.api-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\javax.inject.javax.inject-1.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.data.impl-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.data.api-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.network-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\org.jetbrains.kotlinx.kotlinx-serialization-json-jvm-1.5.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\org.jetbrains.kotlinx.kotlinx-serialization-core-jvm-1.5.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.squareup.okhttp3.okhttp-4.10.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.squareup.okio.okio-jvm-3.2.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.squareup.retrofit2.retrofit-2.9.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.squareup.retrofit2.converter-gson-2.9.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.squareup.retrofit2.adapter-rxjava2-2.9.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.jakewharton.retrofit.retrofit2-kotlinx-serialization-converter-0.8.0.jar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+
+    <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\com.rokt.internal.core.model-4.6.0.aar">
+      <Bind>false</Bind>
+      <Pack>fasle</Pack>
+    </AndroidLibrary>
+    
+    <!--
+	  <AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\org.jetbrains.kotlin.kotlin-stdlib-1.8.22.jar">
 	    <Bind>false</Bind>
 	    <Pack>fasle</Pack>
 	  </AndroidLibrary>
+    -->
 	  
 	  <!--<AndroidLibrary Include="..\NativeLibrary\RoktSDKImplemenation\bin\Release\$(TargetFramework)\outputs\deps\roktsdk-4.6.0.aar">
 	    <Bind>false</Bind>
